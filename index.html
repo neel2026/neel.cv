@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Header -->
     <header>
         <nav>
+            <!-- Mobile menu toggle -->
             <div class="nav-toggle">☰</div>
+            <!-- Dark mode toggle -->
+            <div class="dark-mode-toggle">🌙</div>
+            <!-- Navigation menu -->
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -29,16 +32,15 @@
     <!-- Main Content -->
     <main>
         <!-- Home Section -->
-        <!-- <section id="home" class="section">
-            <div class="content">
-                <h1>Neel Patel</h1>
-                <p>Web Developer</p>
-                <a href="#contact" class="btn">Hire Me</a>
-            </div>
-        </section> -->
-
-        <!-- Home Section -->
         <section id="home" class="section">
+            <!-- Floating particles for background effect -->
+            <div class="particles">
+                <div style="width: 20px; height: 20px; left: 10%; top: 20%; animation-duration: 10s;"></div>
+                <div style="width: 15px; height: 15px; left: 30%; top: 50%; animation-duration: 15s;"></div>
+                <div style="width: 25px; height: 25px; left: 70%; top: 30%; animation-duration: 12s;"></div>
+                <div style="width: 10px; height: 10px; left: 50%; top: 10%; animation-duration: 14s;"></div>
+                <div style="width: 18px; height: 18px; left: 20%; top: 70%; animation-duration: 11s;"></div>
+            </div>
             <div class="content">
                 <div class="home-container">
                     <div class="home-text">
@@ -51,118 +53,131 @@
                         </div>
                     </div>
                     <div class="home-image">
+                        <!-- Replace with your profile picture -->
                         <img src="1740218498767.jpg" alt="Profile Picture" class="profile-pic">
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="about" class="section m-8 ">
             <div class="content">
                 <h2>About Me</h2>
-                <p>I’m a passionate web developer with experience in creating dynamic and responsive websites using
-                    HTML, CSS, and JavaScript. My goal is to build user-friendly and visually appealing digital
-                    solutions.</p>
+                <ul style="font-size: 25px;">
+                    <li>Passionate web developer with experience in building dynamic and responsive websites.</li>
+                    <li>Proficient in HTML, CSS, and JavaScript.</li>
+                    <li>Worked on e-commerce projects using the Django framework.</li>
+                    <li>Strong foundation in both frontend and backend technologies.</li>
+                    <li>Aim to create user-friendly and visually appealing digital solutions.</li>
+                </ul>
             </div>
         </section>
+        
 
-        <!-- Skills Section -->
-        <!-- <section id="skills" class="section">
-            <div class="content">
-                <h2>Skills</h2>
-                <div class="skill" data-width="90%">
-                    <span>HTML</span>
-                    <div class="bar"></div>
-                </div>
-                <div class="skill" data-width="80%">
-                    <span>CSS</span>
-                    <div class="bar"></div>
-                </div>
-                <div class="skill" data-width="75%">
-                    <span>JavaScript</span>
-                    <div class="bar"></div>
-                </div>
-            </div>
-            
-        </section> -->
         <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="content">
                 <h2>Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/html5.svg" alt="HTML"
-                            class="skill-logo">
+                    <!-- Skill Item: HTML -->
+                    <div class="skill-item" data-proficiency="90">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/html5.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>HTML</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/css3.svg" alt="CSS"
-                            class="skill-logo">
+                    <!-- Skill Item: CSS -->
+                    <div class="skill-item" data-proficiency="80">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/css3.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>CSS</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/javascript.svg" alt="JavaScript"
-                            class="skill-logo">
+                    <!-- Skill Item: JavaScript -->
+                    <div class="skill-item" data-proficiency="50">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/javascript.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>JavaScript</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tailwindcss.svg"
-                            alt="Tailwind CSS" class="skill-logo">
+                    <!-- Skill Item: Tailwind CSS -->
+                    <div class="skill-item" data-proficiency="80">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tailwindcss.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>Tailwind CSS</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/bootstrap.svg" alt="Bootstrap"
-                            class="skill-logo">
+                    <!-- Skill Item: Bootstrap -->
+                    <div class="skill-item" data-proficiency="90">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/bootstrap.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>Bootstrap</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/python.svg" alt="Python"
-                            class="skill-logo">
+                    <!-- Skill Item: Python -->
+                    <div class="skill-item" data-proficiency="60">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/python.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>Python</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/django.svg" alt="Django"
-                            class="skill-logo">
+                    <!-- Skill Item: Django -->
+                    <div class="skill-item" data-proficiency="50">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/django.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>Django</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/mysql.svg" alt="MySQL"
-                            class="skill-logo">
+                    <!-- Skill Item: MySQL -->
+                    <div class="skill-item" data-proficiency="50">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/mysql.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>MySQL</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/git.svg" alt="Git"
-                            class="skill-logo">
+                    <!-- Skill Item: Git -->
+                    <div class="skill-item" data-proficiency="65">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/git.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>Git</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" alt="GitHub"
-                            class="skill-logo">
+                    <!-- Skill Item: GitHub -->
+                    <div class="skill-item" data-proficiency="65">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>GitHub</span>
                     </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/postman.svg" alt="REST API"
-                            class="skill-logo">
+                    <!-- Skill Item: REST API (Postman Icon) -->
+                    <div class="skill-item" data-proficiency="50">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="10" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#2a9d8f" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" class="progress" />
+                            <image href="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/postman.svg" x="25" y="25" width="50" height="50" />
+                        </svg>
                         <span>REST API</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="content">
-                <h2>Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="date">2020 - Present</span>
-                        <h3>Web Developer - Tech Corp</h3>
-                        <p>Developed responsive websites and implemented interactive features.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">2018 - 2020</span>
-                        <h3>Junior Developer - Web Solutions</h3>
-                        <p>Assisted in front-end development and UI design.</p>
                     </div>
                 </div>
             </div>
@@ -173,17 +188,19 @@
             <div class="content">
                 <h2>Education</h2>
                 <div class="timeline">
-                    <a href="https://vpmpce.wordpress.com/" style="text-decoration: none; font: 900;">
+                    <!-- Education Entry 1 -->
+                    <a href="https://vpmpce.wordpress.com/" style="text-decoration: none;">
                         <div class="timeline-item">
                             <span class="date">2019-2022</span>
-                            <h3>Diploma in CE from VPMP Polytechnic </h3>
+                            <h3>Diploma in CE from VPMP Polytechnic</h3>
                             <p style="color: rgb(0, 0, 0);">Focused on software engineering.</p>
                         </div>
                     </a>
-                    <a href="https://silveroakuni.ac.in/" style="text-decoration: none; font: 900;">
+                    <!-- Education Entry 2 -->
+                    <a href="https://silveroakuni.ac.in/" style="text-decoration: none;">
                         <div class="timeline-item">
                             <span class="date">2022-2025</span>
-                            <h3 href="https://silveroakuni.ac.in/">BTech from Silver Oak University</h3>
+                            <h3>BTech from Silver Oak University</h3>
                             <p style="color: rgb(0, 0, 0);">Focused on software engineering.</p>
                         </div>
                     </a>
@@ -191,17 +208,18 @@
             </div>
         </section>
 
-
         <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="content">
                 <h2>Projects</h2>
                 <div class="project-grid">
+                    <!-- Project 1 -->
                     <div class="project-card">
                         <h3>Portfolio Website</h3>
                         <p>A personal portfolio built with HTML, CSS, and JS.</p>
                         <a href="#home" class="btn">View Project</a>
                     </div>
+                    <!-- Project 2 -->
                     <div class="project-card">
                         <h3>E-commerce Site</h3>
                         <p>A responsive Dairy product website using Django framework</p>
@@ -215,23 +233,15 @@
         <section id="contact" class="section">
             <div class="content">
                 <h2>Contact</h2>
-                <p>Email: <a href="mailto:you@example.com">neelramani784@gmail.com</a></p>
+                <!-- Update with your real contact details -->
+                <p>Email: <a href="mailto:neel@example.com">neel@example.com</a></p>
                 <p>Phone: 7698343840</p>
-                <p>Address: Nikol, Ahmebabad</p>
-                <!-- <form id="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit" class="btn">Send</button>
-                </form> -->
+                <p>Address: Nikol, Ahmedabad</p>
             </div>
         </section>
     </main>
 
+    <!-- Link to JavaScript file -->
     <script src="script.js"></script>
 </body>
-
 </html>

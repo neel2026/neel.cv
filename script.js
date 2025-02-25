@@ -8,20 +8,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-
 // Intersection Observer for Animations
 const sections = document.querySelectorAll('.section');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            // Animate skill bars
+            // Animate skill progress bars when Skills section is visible
             if (entry.target.id === 'skills') {
-                const skills = entry.target.querySelectorAll('.skill');
-                skills.forEach(skill => {
-                    const bar = skill.querySelector('.bar');
-                    bar.style.width = skill.dataset.width;
+                const skillItems = entry.target.querySelectorAll('.skill-item');
+                skillItems.forEach(item => {
+                    const proficiency = item.dataset.proficiency;
+                    const progress = item.querySelector('.progress');
+                    const offset = 283 - (283 * proficiency / 100);
+                    progress.style.strokeDashoffset = offset;
                 });
             }
         }
@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
     document.getElementById('home').classList.add('visible');
 });
 
-// Mobile Menu Toggle
+// Navbar Toggle for Mobile
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -43,9 +43,11 @@ navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Contact Form Handling (Simulated)
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Message sent! (This is a demo)');
-    this.reset();
+// Dark Mode Toggle
+const darkModeToggle = document.querySelector('.dark-mode-toggle');
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
+
+
