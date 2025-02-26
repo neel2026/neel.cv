@@ -43,11 +43,11 @@ navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Dark Mode Toggle
+// Mode Toggle
 const darkModeToggle = document.querySelector('.dark-mode-toggle');
 darkModeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-    darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ ' : '🌙 ';
 });
 
 

@@ -49,7 +49,7 @@ body {
 /* Section Styling */
 .section {
     padding: 100px 20px;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
